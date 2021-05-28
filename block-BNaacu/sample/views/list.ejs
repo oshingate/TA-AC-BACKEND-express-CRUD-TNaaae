@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/stylesheets/style.css" />
+  </head>
+  <body>
+    <ul>
+      <% students.forEach((ele,i)=>{ %>
+      <li>
+        <ul>
+          <li>Name:-<%= ele.name %></li>
+          <li>Email:-<%= ele.email %></li>
+          <li>Gender:-<%= ele.gender %></li>
+          <li>ID:-<%= ele._id %></li>
+        </ul>
+      </li>
+      <% }) %>
+    </ul>
+  </body>
+</html>
