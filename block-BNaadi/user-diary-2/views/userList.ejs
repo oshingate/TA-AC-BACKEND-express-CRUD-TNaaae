@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <Strong>User List Page</Strong>
+
+      <% users.forEach((ele)=>{ %>
+      <div>
+        <h1><%= ele.name %></h1>
+        <h2><%= ele.email %></h2>
+        <a href="/users/<%= ele._id  %> ">Get more details</a>
+      </div>
+      <% }) %>
+    </section>
+  </body>
+</html>
