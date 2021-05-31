@@ -54,4 +54,4 @@ Use ejs as templating engine to render web pages.
 
 - Don't use postman for sending any data.
 - handle form in application itself to create and update user.
-- go through ejs doucumentation for better understanding of ejs templates(`ejs.co`)
+- g
