@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="flex jsb">
+        <a href="/users" class="btn btn-pri"> View Users </a>
+        <Strong>Users</Strong>
+        <a href="/" class="btn btn-pri"> Home </a>
+      </div>
+    </header>
+    <body>
+      <h1>Update User</h1>
+      <section class="newUserSec flex center-center">
+        <form
+          class="newUserForm"
+          action="/users/<%= user._id%>/edit"
+          method="POST"
+        >
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            value="<%= user.name%>"
+          />
+          <input
+            type="email"
+            placeholder="email"
+            name="email"
+            value="<%= user.email%>"
+          />
+          <input
+            type="text"
+            placeholder="Sports"
+            name="sports"
+            value="<%= user.sports%>"
+          />
+          <a href="#">
+            <button class="btn btn-sec" type="submit">Submit</button></a
+          >
+        </form>
+      </section>
+    </body>
+  </body>
+</html>
